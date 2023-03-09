@@ -6,6 +6,9 @@ import {
   AiFillInstagram,
   AiFillLinkedin,
   AiFillDribbbleCircle,
+  AiFillMessage,
+  AiFillGithub,
+  AiFillMail,
 } from "react-icons/ai";
 import Image from "next/image";
 import deved from "../public/undraw.svg";
@@ -31,72 +34,75 @@ export default function Home(this: any) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
-        <nav className="py-10 mb-12 flex justify-between">
-          <h1 className="text-xl Chalkboard font-bold dark:text-white">
+      <main className="bg-white px-10 md:px-36 lg:px-60 text-center py-4 dark:bg-gray-900 gap-4">
+        <nav className="py-2 mb-12 flex justify-between ">
+          <h1 className="mt-2 text-lg flex font-bold dark:text-white font-mono ">
             {" "}
-            CINDY YUEN{" "}
+            CINDYYUEN{""}
+               
           </h1>
-          <ul className="flex items-center">
+          <ul className="flex items-center text-right   ">
             <li className=" dark:text-white m-0 p-0 ">
               <button className="mt-2" onClick={() => setDarkMode(!darkMode)}>
                 {" "}
                 {darkMode ? (
-                  <BsFillMoonStarsFill className="h-5 w-5" />
-                ) : (
                   <BsFillSunFill className="h-5 w-5" />
+                ) : (
+                  <BsFillMoonStarsFill className="h-5 w-5" />
                 )}
               </button>
             </li>
 
             <li>
+              
               <a
-                className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
+                className=" font-mono text-lg text-black font-bold px-4 py-2 rounded-md ml-8 dark:text-white"
+                href="https://drive.google.com/file/d/12zWu-43a81q7D52c09xo6WSIr8jvQ26-/view?usp=share_link"
+                target="_blank"
+              >
+                {" "}
+                <button>About</button>
+              </a>
+            </li>
+            <li>
+               <a
+                className=" text-center font-mono  text-lg  font-bold bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
                 href="https://drive.google.com/file/d/12zWu-43a81q7D52c09xo6WSIr8jvQ26-/view?usp=share_link"
                 target="_blank"
               >
                 {" "}
                 <button>Resume</button>
-              </a>
-            </li>
+                </a>
+                </li>
           </ul>
         </nav>
-        <section className="my-8">
-          <div className="text-center p-10">
-            <h2 className="text-5xl text-left py-2 text-teal-600 font-medium md:text-6xl">
+        <section className="my-44">
+          <div className="text-left ">
+            <h2 className=" text-left  text-teal-400 font-bold md:text-5xl">
               {" "}
               Cindy Yuen
             </h2>
-            <h3 className="text-2xl text-left py-2 md:text-3xl dark:text-white">
+            <h3 className=" font-medium font-mono text-left py-6 md:text-xl dark:text-white">
               {" "}
-              UXUI Designer.
+              I’m a UXUIX designer thrilled to provide better experience for people.
             </h3>
-            <p className="text-md text-left py-2 leading-8 text-gray-800 md-text-xl ma-w-lg mx-auto dark:text-white">
+            <p className="text-left py-2 md:text-lg font-mono  dark:text-zinc-200">
               I have a passion for design thinking, user research, user
-              interface design, typography and use experience storytelling.
+              interface design, typography and use experience storytelling. I hope everyone has good experience on using a product.
             </p>
           </div>
-          <div className="text-5xl flex justify-center gap-12 py-3 text-gray-600">
-            <AiFillInstagram />
+          <div className="text-4xl flex text-left gap-8 py-6 text-gray-500">
+            <AiFillMail />
             <AiFillLinkedin />
-            <AiFillDribbbleCircle />
+            <AiFillGithub />
+            <AiFillDribbbleCircle/>
           </div>
         </section>
         <div>
-          <h3 className="text-5xl text-center bold py-1 dark:text-white ">
-            Portfolio
+          <h3 className="text-2xl text-left font-bold font-mono py-1 dark:text-zinc-400 underline">
+            PORTFOLIO
           </h3>
-          <p className="text-md py-2 leading-8 text-gray-800 dark:text-white ">
-            I have a passion for design thinking, user research, user interface
-            design, typography and use experience storytelling.
-            <span className="text-teal-500">typography</span> use experience{" "}
-            <span className="text-teal-500">passion</span>
-            terface design, typography and use experience st
-          </p>
-          <p className="text-md py-2 leading-8 text-gray-800 dark:text-white ">
-            I have a passion for design thinking, user research, user interface
-            design, typography and use experience storytelling.
-          </p>
+         
         </div>
 
         <section>
