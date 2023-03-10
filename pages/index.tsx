@@ -97,49 +97,50 @@ export default function Home(this: any) {
             <AiFillGithub />
             <AiFillDribbbleCircle/>
           </div>
-        </section>
+      
         <div>
-          <h3 className="text-2xl text-left font-bold font-mono py-1 dark:text-zinc-400 underline">
+          <h3  className="text-xl text-left font-bold font-mono py-28 dark: text-gray-500 underline ">
             PORTFOLIO
           </h3>
+      
+          <div className="py-2 grid grid-cols-2 md:grid-cols-2 gap-6  ">
+            <div className="flex flex-col text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
+             
+              <iframe
+                allowFullScreen
+                className="fp-iframe white w-full h-96"
+                src="https://heyzine.com/flip-book/185e9d2fa5.html"
+              ></iframe>
+   <h3 className=" text-left  text-black font-bold md:text-xl py-8">
+                Postal Museum AR App
+              </h3>
+              <p className=" text-left  text-black font-normal md:text-lg py-2">
+              Figma
+              </p>
+              <div className=" flex flex-col text-center p-4 rounded-xl my-4  dark:bg-white"></div>
+            </div>
+
+            <div className="flex flex-col text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
          
-        </div>
-
-        <section>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div className="flex flex-col text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
-              <iframe
-                allowFullScreen
-                className="fp-iframe white w-full h-96"
-                src="https://heyzine.com/flip-book/185e9d2fa5.html"
-              ></iframe>
-
-              <div className=" flex flex-col text-center p-4 rounded-xl my-4  dark:bg-white"></div>
-            </div>
-
-            <div className="flex flex-col text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
               <div />
+          
+
 
               <iframe
                 allowFullScreen
                 className="fp-iframe white w-full h-96"
                 src="https://heyzine.com/flip-book/185e9d2fa5.html"
               ></iframe>
-
+                 <h3 className=" text-left  text-black font-bold md:text-xl py-8">
+                Postal Museum AR App
+              </h3>
+              <p className=" text-left  text-black font-normal md:text-lg py-2">
+              Figma
+              </p>
               <div className=" flex flex-col text-center p-4 rounded-xl my-4  dark:bg-white"></div>
             </div>
-
-            <div className="flex flex-col text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
-              <div />
-              <iframe
-                allowFullScreen
-                className="fp-iframe white w-full h-96"
-                src="https://heyzine.com/flip-book/185e9d2fa5.html"
-              ></iframe>
-
-              <div className=" flex flex-col text-center p-4 rounded-xl my-4  dark:bg-white"></div>
-            </div>
-          </div>
+</div>
+</div>
         </section>
       </main>
     </div>
