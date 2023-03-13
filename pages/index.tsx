@@ -1,17 +1,13 @@
 import Head from "next/head";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { BsFillSunFill } from "react-icons/bs";
-import About from "../components/About";
-
+import { useState } from "react";
 import {
-  AiFillInstagram,
   AiFillLinkedin,
   AiFillDribbbleCircle,
-  AiFillMessage,
   AiFillGithub,
   AiFillMail,
 } from "react-icons/ai";
-import { useState } from "react";
 
 export default function Home(this: any) {
   const [darkMode, setDarkMode] = useState(true);
@@ -36,9 +32,9 @@ export default function Home(this: any) {
               <button className="mt-2" onClick={() => setDarkMode(!darkMode)}>
                 {" "}
                 {darkMode ? (
-                  <BsFillSunFill className="h-5 w-5" />
+                  <BsFillSunFill className="h-5 w-5 hover:text-amber-400" />
                 ) : (
-                  <BsFillMoonStarsFill className="h-5 w-5" />
+                  <BsFillMoonStarsFill className="h-5 w-5  hover:text-amber-400" />
                 )}
               </button>
             </li>
@@ -46,12 +42,12 @@ export default function Home(this: any) {
             <li>
               
               <a
-                className=" font-mono text-lg text-black font-bold px-4 py-2 rounded-md ml-8 dark:text-white"
+                className=" font-mono text-lg text-black font-bold px-4 py-2 rounded-md ml-8 dark:text-white "
                 href="http://localhost:3000/about-me"
                 target="_blank"
               >
                 {" "}
-                <button>About</button>
+                <a className=" hover:text-teal-400"  >About</a>
               </a>
             </li>
             <li>
@@ -82,10 +78,10 @@ export default function Home(this: any) {
             </p>
           </div>
           <div className="text-4xl flex text-left gap-8 py-6 text-gray-500">
-            <a className="AiFillMail  hover:text-white" href="mailto:cindyyuen1011@gmail.com"> <AiFillMail /> </a>
-            <a className="AiFillMail  hover:text-white"  href="https://www.linkedin.com/in/cindy-yuen/">    <AiFillLinkedin /> </a>
-            <a className="AiFillMail hover:text-white"  href="https://github.com/cindyuen">    <AiFillGithub /> </a>
-            <a className="AiFillMail hover:text-white"  href="https://dribbble.com/cindyyuen">        
+            <a className="AiFillMail   hover:text-black  dark:hover:text-white" href="mailto:cindyyuen1011@gmail.com"> <AiFillMail /> </a>
+            <a className="AiFillMail   hover:text-black dark:hover:text-white"  href="https://www.linkedin.com/in/cindy-yuen/">    <AiFillLinkedin /> </a>
+            <a className="AiFillMail  hover:text-black  dark:hover:text-white"  href="https://github.com/cindyuen">    <AiFillGithub /> </a>
+            <a className="AiFillMail hover:text-black dark:hover:text-white"  href="https://dribbble.com/cindyyuen">        
             <AiFillDribbbleCircle/> </a>
        
           </div>
@@ -112,11 +108,7 @@ export default function Home(this: any) {
             </div>
 
             <div className="flex flex-col text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
-         
-              <div />
-          
-
-
+   
               <iframe
                 allowFullScreen
                 className="fp-iframe white w-full h-96"
@@ -129,14 +121,14 @@ export default function Home(this: any) {
               Figma
               </p>
               <div className=" flex flex-col text-center p-4 rounded-xl my-4  dark:bg-white"></div>
-            </div>
+              </div>
 </div>
 </div>
 
       
         </section>
       </main>
-    </div>
+      </div>
     
   );
 }
