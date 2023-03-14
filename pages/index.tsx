@@ -8,6 +8,7 @@ import {
   AiFillGithub,
   AiFillMail,
 } from "react-icons/ai";
+import Link from "next/link";
 
 export default function Home(this: any) {
   const [darkMode, setDarkMode] = useState(true);
@@ -40,15 +41,10 @@ export default function Home(this: any) {
             </li>
 
             <li>
-              
-              <a
-                className=" font-mono text-lg text-black font-bold px-4 py-2 rounded-md ml-8 dark:text-white "
-                href="http://localhost:3000/about-me"
-                target="_blank"
-              >
-                {" "}
-                <a className=" hover:text-teal-400"  >About</a>
-              </a>
+            
+            <Link href="/about" className="font-mono text-lg hover:text-teal-400 dark:hover:text-teal-400 text-black font-bold px-4 py-2 rounded-md ml-8 dark:text-white"> 
+            About</Link>
+            
             </li>
             <li>
                <a
@@ -121,7 +117,7 @@ export default function Home(this: any) {
               Figma
               </p>
               <div className=" flex flex-col text-center p-4 rounded-xl my-4  dark:bg-white"></div>
-              </div>
+            </div>
 </div>
 </div>
 
