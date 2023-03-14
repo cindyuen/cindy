@@ -15,11 +15,11 @@ export default function Home(this: any) {
       <Head>
         <title>Cindy Yuen Portfolio</title>
         <meta name="description" content="cindy yuen portfolio" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-white px-10 md:px-36 lg:px-60 text-center py-4 dark:bg-gray-900 gap-4">
+      <main className="bg-white px-10 md:px-36 lg:px-60 text-center py-4 gap-4  dark:bg-gray-900 ">
         <Navigation
           darkMode={darkMode}
           setDarkMode={() => setDarkMode(!darkMode)}
@@ -73,7 +73,7 @@ export default function Home(this: any) {
           </div>
 
           <div>
-            <h3 className="text-xl text-left font-bold font-mono pt-28 dark: text-gray-500 underline ">
+            <h3 className="text-xl text-left font-bold font-mono pt-14 dark: text-gray-500 underline ">
               PORTFOLIO
             </h3>
 

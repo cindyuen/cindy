@@ -10,9 +10,8 @@ export const Navigation = ({
 }) => {
   return (
     <nav className="py-2 mb-12 flex justify-between ">
-      <h1 className="mt-2 text-lg flex font-bold dark:text-white font-mono ">
-        {" "}
-        CINDYYUEN{""}
+      <h1 className="mt-2 text-lg flex font-bold dark:text-white font-mono dark:hover:text-teal-400  hover:text-teal-400 ">
+        <Link href="/">CINDYYUEN</Link> {""}
       </h1>
       <ul className="flex items-center text-right   ">
         <li className=" dark:text-white m-0 p-0 ">
