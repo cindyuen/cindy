@@ -1,3 +1,15 @@
-export default function Square() {
-    return <button className="square">X</button>;
-  }
+import { useState } from "react";
+import { Navigation } from "../components/navigation";
+
+export default function About() {
+  const [darkMode, setDarkMode] = useState(true);
+
+  return (
+    <div>
+      <Navigation
+        darkMode={darkMode}
+        setDarkMode={() => setDarkMode(!darkMode)}
+      />
+    </div>
+  );
+}
