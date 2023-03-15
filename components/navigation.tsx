@@ -9,7 +9,7 @@ export const Navigation = ({
   darkMode: boolean;
 }) => {
   return (
-    <nav className="py-2 mb-12 flex justify-between gap-2">
+    <nav className="py-2 mb-12 flex items-center justify-between gap-2">
       <h1 className="mt-2 text-lg flex font-bold dark:text-white font-mono dark:hover:text-teal-400 hover:text-teal-400">
         <Link href="/">CINDYYUEN</Link>
       </h1>

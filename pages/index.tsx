@@ -22,7 +22,7 @@ export default function Home(this: any) {
         <link rel="icon" href="/android-chrome-192x192.png" />
       </Head>
 
-      <main className="bg-white px-10 md:px-36 lg:px-60 text-center py-4 gap-4 dark:bg-gray-900">
+      <main className="w-full bg-white px-4 md:px-36 lg:px-60 text-center py-4 gap-4 dark:bg-gray-900">
         <Navigation
           darkMode={darkMode}
           setDarkMode={() => setDarkMode(!darkMode)}
