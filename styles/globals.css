@@ -21,3 +21,13 @@ a {
   font-family: "burtons";
   src: url ("../public/Burtons.otf");
 }
+
+@layer components {
+  #__next {
+    @apply h-full w-full;
+  }
+  html,
+  body {
+    @apply h-full w-full;
+  }
+}
