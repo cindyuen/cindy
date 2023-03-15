@@ -36,7 +36,7 @@ export const Navigation = ({
         <li>
           <a
             className=" text-center font-mono  text-lg  font-bold  bg-gradient-to-r from-teal-300 to-purple-300 text-white  px-4 py-2 rounded-md ml-8"
-            href="https://drive.google.com/file/d/12zWu-43a81q7D52c09xo6WSIr8jvQ26-/view?usp=share_link"
+            href="https://drive.google.com/file/d/1BanmSU-Gpic7OVSHMAr7Tr2oFVo2N4VT/view?usp=sharing"
             target="_blank"
           >
             {" "}

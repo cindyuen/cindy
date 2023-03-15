@@ -15,7 +15,10 @@ export default function Home(this: any) {
       <Head>
         <title>Cindy Yuen Portfolio</title>
         <meta name="description" content="cindy yuen portfolio" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0 "
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -26,7 +29,7 @@ export default function Home(this: any) {
         />
 
         <section className="my-44">
-          <div className="text-left font-mono ">
+          <div className="text-left font-mono  ">
             <h2 className=" text-left  text-teal-400 font-bold md:text-5xl  hover:text-purple-300">
               {" "}
               CINDY YUEN
@@ -73,43 +76,51 @@ export default function Home(this: any) {
           </div>
 
           <div>
-            <h3 className="text-xl text-left font-bold font-mono pt-14 dark: text-gray-500 underline ">
+            <h3 className="text-xl text-left font-bold font-mono pt-14 dark: text-gray-500 underline  hover:text-teal-400 ">
               PORTFOLIO
             </h3>
 
             <div className="py-2 grid grid-cols-2 md:grid-cols-2 gap-6  ">
-              <div className="flex flex-col text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
+              <div className="flex flex-col text-center shadow-lg p-10 rounded-xl my-8 dark:bg-white">
                 <iframe
                   allowFullScreen
                   className="fp-iframe white w-full h-96"
                   src="https://heyzine.com/flip-book/185e9d2fa5.html"
                 ></iframe>
-                <h3 className=" text-left  text-black font-bold md:text-xl py-8">
+                <h3 className=" text-left  text-black font-bold md:text-xl py-6">
                   Postal Museum AR App
                 </h3>
-                <p className=" text-left  text-black font-normal md:text-lg py-2">
-                  Figma
+                <p className=" text-left  text-black font-normal md:text-lg py-0">
+                  In this project, I used Figma and Miro as my design and design
+                  thinking tools.
                 </p>
                 <div className=" flex flex-col text-center p-4 rounded-xl my-4  dark:bg-white"></div>
               </div>
 
-              <div className="flex flex-col text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
+              <div className="flex flex-col text-center shadow-lg p-10 rounded-xl my-8 dark:bg-white">
                 <iframe
                   allowFullScreen
                   className="fp-iframe white w-full h-96"
                   src="https://heyzine.com/flip-book/185e9d2fa5.html"
                 ></iframe>
-                <h3 className=" text-left  text-black font-bold md:text-xl py-8">
+                <h3 className=" text-left  text-black font-bold md:text-xl py-6">
                   Postal Museum AR App
                 </h3>
-                <p className=" text-left  text-black font-normal md:text-lg py-2">
+                <p className=" text-left  text-black font-normal md:text-lg py-0">
                   Figma
                 </p>
                 <div className=" flex flex-col text-center p-4 rounded-xl my-4  dark:bg-white"></div>
               </div>
+              <div className="footer ">
+                <div className="horizontal text-white"></div>
+              </div>
             </div>
           </div>
         </section>
+
+        <p className="text-right dark:text-neutral-400">
+          Designed and developed by Cindy Yuen
+        </p>
       </main>
     </div>
   );
