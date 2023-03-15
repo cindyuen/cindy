@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image";
 import { useState } from "react";
 import {
   AiFillDribbbleCircle,
@@ -38,16 +39,16 @@ export default function About() {
             <div className="relative grid grid-cols-2 gap-8  ">
               <h2 className=" text-left  text-teal-400 font-bold md:text-5xl display:block hover:text-purple-300 ">
                 {" "}
-                Hiya, I'm Cindy!
+                Hiya, I&apos;m Cindy!
                 <p className="text-left font-semibold display:block md:text-xl text-gray-800 py-5  dark:text-white">
-                  I'm a User Experience Design student at the Kingston
+                  I&apos;m a User Experience Design student at the Kingston
                   University and I hope to emerge technology and design in
                   helping people.
                 </p>
                 <p className="text-left font-normal display:block md:text-lg text-gray-800 py-0  dark:text-white">
                   I solve problems using my building blocks of design and
                   development to make the world a better place. To me, learning
-                  is a lifelong journey and it never stops. When I'm not
+                  is a lifelong journey and it never stops. When I&apos;m not
                   collaborating with others on fun projects, you can find me
                   drawing, watching the latest Star Wars show or playing video
                   games.
@@ -83,7 +84,7 @@ export default function About() {
                 </div>
               </h2>
 
-              <img
+              <Image
                 layout="fill"
                 alt="myself"
                 objectFit="contain"
