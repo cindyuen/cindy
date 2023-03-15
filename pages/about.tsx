@@ -83,7 +83,12 @@ export default function About() {
                 </div>
               </h2>
 
-              <img layout="fill" objectFit="contain" src="/myself.jpg" />
+              <img
+                layout="fill"
+                alt="myself"
+                objectFit="contain"
+                src="/myself.jpg"
+              />
             </div>
           </section>
 
