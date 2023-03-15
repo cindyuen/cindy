@@ -19,7 +19,7 @@ export default function Home(this: any) {
           name="viewport"
           content="width=device-width, initial-scale=1.0 "
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/android-chrome-192x192.png" />
       </Head>
 
       <main className="bg-white px-10 md:px-36 lg:px-60 text-center py-4 gap-4  dark:bg-gray-900 ">
